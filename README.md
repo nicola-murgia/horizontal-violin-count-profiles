@@ -9,14 +9,15 @@ R script generating **horizontal count-scaled violin profiles** of tyrosine hydr
 
 ## Description
 
-This script produces publication-ready vector graphics (SVG) displaying TH+ neuron counts across 11 serial coronal sections of the mouse SNpc. Each profile is a **count-scaled violin** where the full vertical thickness at every section position equals the exact neuronal count (1 neuron = 1 SVG pixel). The shape is drawn with smooth cubic Bézier curves using shape-preserving (PCHIP) interpolation.
-
-Three genotypes are compared:
-- **Wt** (wild-type) — grey
-- **Homo** (homozygous) — orange
-- **Het** (heterozygous) — blue
+This script produces publication-ready vector graphics (SVG) displaying TH+ neuron counts across 11 serial coronal sections of the mouse SNpc. Each profile is a **count-scaled violin** where the full vertical thickness at every section position equals the exact neuronal count (1 neuron = 1 SVG pixel). The shape is drawn with smooth cubic Bézier curves using shape-preserving (PCHIP) interpolation. Individual counts are indicated by points and numerical labels. Figures are exported as editable SVG files. No normalization, data transformation, group averaging, or inferential statistical analysis is performed.
 
 The script is fully self-contained and requires **no additional R packages** beyond base R 4.1.1+.
+
+---
+
+## Data
+
+TH-positive neurons in the substantia nigra pars compacta (SNpc) were quantified across 11 sequential coronal sections in wild-type (WT; _n_ = 6), homozygous (Homo; _n_ = 5), and heterozygous (Het; _n_ = 10) animals. Each animal was considered an independent biological replicate, and section order was preserved.
 
 ---
 
